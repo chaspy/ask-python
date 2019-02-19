@@ -1,4 +1,4 @@
 #!/bin/bash
 set -x
 
-docker-compose up --force-recreate
+docker-compose up --build --force-recreate
