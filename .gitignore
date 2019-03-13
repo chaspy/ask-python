@@ -1,6 +1,7 @@
 ### https://raw.github.com/github/gitignore/d1baec1bf1fe04bbc67b9e23074ea2f00fd31224/Python.gitignore
 # pipenv environment
 Pipfile*
+.envrc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
