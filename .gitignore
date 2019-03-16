@@ -2,6 +2,7 @@
 # pipenv environment
 Pipfile*
 .envrc
+.vocode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
