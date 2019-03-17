@@ -2,6 +2,8 @@
 
 ## Development
 
+1. cp .envrc.sample .envrc # We strongly recommend using [direnv](https://github.com/direnv/direnv)
+1. source .envrc # If you don't use direnv
 1. ./run.sh
 1. access to localhost:8000 in your browser
 
