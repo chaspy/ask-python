@@ -1,7 +1,9 @@
+<a href="/question/">質問を投稿する</a>
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="/ask/{{ question.id }}/">{{ question.question_text }}</a></li>
+        <li><a href="/question/{{ question.id }}/">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

@@ -1,0 +1,17 @@
+{% block content %}
+<h1>詳細画面</h1>
+<hr>
+<h2>{{ question.question_text }}</h2> 
+<div style="margin-left:100px;">
+{% for message in question.message_set.all %}
+        回答:{{ message.answer_text }}<br>       
+{% endfor %}
+</div>
+
+
+<form action="" method="POST">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button type="submit">送信</button>
+</form>
+{% endblock %}
