@@ -4,9 +4,13 @@
 <h2>{{ question.question_text }}</h2> 
 <div style="margin-left:100px;">
 {% for message in question.message_set.all %}
+        ユーザー名 {{ message.user.username}}<br>
         回答:{{ message.answer_text }}<br>       
 {% endfor %}
 </div>
+
+
+<li><a href="/question/stautus/{{ message.question.id }}/">回答に満足した</a></li>
 
 
 <form action="" method="POST">

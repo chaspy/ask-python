@@ -6,9 +6,6 @@ from django.shortcuts import redirect, get_object_or_404
 from .models import Question, Message, User
 # Create your views here.
 
-def index(request):
-    return HttpResponse("Hello, world.")
-
 class IndexView(generic.ListView):
     template_name = 'ask/index.html'
     context_object_name = 'latest_question_list'
@@ -33,6 +30,7 @@ class QuestionView(generic.CreateView):
  
         # redicrect top
         return redirect('/')
+
 
 class DetailView(generic.CreateView):
     """/question    question."""
