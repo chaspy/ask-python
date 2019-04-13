@@ -128,6 +128,7 @@ STATIC_URL = '/static/'
 
 # Login URL
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 # TODO change AUTH_USER_MODEL 
 #AUTH_USER_MODEL = 'users.User' 
