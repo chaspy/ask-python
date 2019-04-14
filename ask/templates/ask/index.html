@@ -1,4 +1,13 @@
-<a href="/question/">質問を投稿する</a>
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  <p><a href="{% url 'logout' %}">logout</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+  <!-- <a href="/users/login">ログインする</a> -->
+{% endif %}
+
+<p><a href="/question/">質問を投稿する</a></p>
 
 {% if latest_question_list %}
     <ul>
